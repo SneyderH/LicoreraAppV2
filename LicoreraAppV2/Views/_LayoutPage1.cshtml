@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    @*<meta name="viewport" content="width=device-width" />*@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title</title>
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="~/css/style-starter.css" rel="stylesheet" />
+    @*<a href="~/webfonts/fa-brands-400.eot"></a>
+    <a href="~/webfonts/fa-brands-400.ttf"></a>
+    <a href="~/webfonts/fa-brands-400.woff"></a>
+    <img src="~/webfonts/fa-brands-400.svg" />
+    <a href="~/webfonts/fa-brands-400.woff2"></a>
+    <img src="~/webfonts/fa-regular-400.svg" /
+    <a href="~/webfonts/fa-regular-400.eot"></a>
+    <a href="~/webfonts/fa-regular-400.ttf"></a>
+    <a href="~/webfonts/fa-regular-400.woff"></a>
+    <a href="~/webfonts/fa-regular-400.woff2"></a>
+    <a href="~/webfonts/fa-solid-900.eot"></a>
+    <img src="~/webfonts/fa-solid-900.svg" />
+    <a href="~/webfonts/fa-solid-900.ttf"></a>
+    <a href="~/webfonts/fa-solid-900.woff"></a>
+    <a href="~/webfonts/fa-solid-900.woff2"></a>*@
+
+    @*JAVASCRIPT*@
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery-3.3.1.min.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/js/theme-change.js"></script>
+</head>
+<body>
+    <!--/Header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1>
+                    <a class="navbar-brand pe-xl-5 pe-lg-4" href="index.html">
+                        <span class="w3yellow">Licorera La Maruchenga</span>
+                    </a>
+                </h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li>@Html.ActionLink("Principal ", "Index", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Acerca de ", "About", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Contacto ", "Contact", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Servicios ", "Service", "Home", new { @class = "nav-link" })</li>
+
+
+
+                        @*BOTON DE BUSQUEDA*@
+                        <!--<li class="nav-item search-right">
+                        <a href="#search" class="btn search-btn" title="search"><span class="fas fa-search me-2" aria-hidden="true"></span></a>-->
+                        <!-- search popup -->
+                        <!--<div id="search" class="pop-overlay">
+                            <div class="popup">
+                                <h3 class="title-w3l two mb-4 text-left">Search Here</h3>
+                                <form action="#" method="GET" class="search-box d-flex position-relative">
+                                    <input type="search" placeholder="Enter Keyword here" name="search" required="required" autofocus="">
+                                    <button type="submit" class="btn"><span class="fas fa-search" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                            <a class="close" href="#close">×</a>
+                        </div>-->
+                        <!-- /search popup -->
+                        <!--</li>-->
+
+
+                    </ul>
+                    <!--/search-right-->
+                    <ul class="header-search me-lg-4">
+                        <li class="get-btn">
+                            <a href="contact.html" class="btn btn-style btn-primary" title="search">Mirar Precios <i class="fas fa-arrow-right ms-lg-4 ms-2"></i></a>
+                        </li>
+
+                    </ul>
+                    <!--//search-right-->
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                @*<div class="mobile-position">
+                        <nav class="navigation">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <div class="mode-container">
+                                        <i class="gg-sun"></i>
+                                        <i class="gg-moon"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </nav>
+                    </div>*@
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--//Header-->
+    <div>
+        @RenderBody()
+    </div>
+    <!--/w3l-footer-29-main-->
+    <footer class="w3l-footer-29-main">
+        <div class="footer-29 py-5">
+            <div class="container py-lg-4">
+                <h2>
+                    Licores de excelente calidad<br>
+                </h2>
+                <div class="row footer-top-29 mt-md-5 mt-4">
+                    <div class="col-lg-3 col-md-6 footer-list-29 footer-1">
+                        <h6 class="footer-title-29">Dirección</h6>
+                        <div class="footer-listw3-grids">
+                            <ul class="footer-listw3">
+                                <li>Bello, Antioquia</li>
+                                <li>CRA 65 #25 - 04</li>
+                                <li>Primer Piso</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5 pe-lg-5">
+                        <h6 class="footer-title-29">Contáctanos</h6>
+                        <div class="footer-listw3-grids">
+                            <ul class="footer-listw3">
+                                <li><a href="tel:+(21) 255 999 8888">+(21) 255 999 8888</a></li>
+                                <li><a href="mailto:Workcore@mail.com" class="mail">Workcore@mail.com</a></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5 pe-lg-5">
+                        <h6 class="footer-title-29">Links</h6>
+                        <div class="footer-listw3-grids">
+                            <ul class="footer-listw3">
+                                <li><a href="index.html">Principal</a></li>
+                                <li><a href="about.html">Acerca de</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li><a href="contact.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-list-29 footer-4 mt-lg-0 mt-5 ps-lg-5">
+                        <h6 class="footer-title-29">Permanece Conectado</h6>
+                        <p>Recibe actualizaciones de nuestros precios</p>
+
+                        <form action="#" class="subscribe" method="post">
+                            <input type="email" name="email" placeholder="Tu Correo Electrónico" required="">
+                            <button><span class="fas fa-paper-plane"></span></button>
+                        </form>
+                        @*<div class="main-social-footer-29 mt-4">
+                                <a href="#facebook" class="facebook"><span class="fab fa-facebook-f"></span></a>
+                                <a href="#twitter" class="twitter"><span class="fab fa-twitter"></span></a>
+                                <a href="#instagram" class="instagram"><span class="fab fa-instagram"></span></a>
+
+                                <a href="#linkd" class="linkd"><span class="fab fa-linkedin-in"></span></a>
+                            </div>*@
+                    </div>
+                </div>
+                <div class="bottom-copies text-center">
+                    <p class="copy-footer-29">© 2024. Todos los derechos reservados | Diseñados por <a href="#">SneyDevs</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+        <!-- //move top -->
+    </footer>
+
+    @*<a href="~/webfonts/fa-brands-400.eot"></a>
+    <a href="~/webfonts/fa-brands-400.ttf"></a>
+    <a href="~/webfonts/fa-brands-400.woff"></a>
+    <img src="~/webfonts/fa-brands-400.svg" />
+    <a href="~/webfonts/fa-brands-400.woff2"></a>
+    <a href="~/webfonts/fa-regular-400.eot"></a>
+    <img src="~/webfonts/fa-regular-400.svg" />
+    <a href="~/webfonts/fa-regular-400.ttf"></a>
+    <a href="~/webfonts/fa-regular-400.woff"></a>
+    <a href="~/webfonts/fa-regular-400.woff2"></a>
+    <a href="~/webfonts/fa-solid-900.eot"></a>
+    <img src="~/webfonts/fa-solid-900.svg" />
+    <a href="~/webfonts/fa-solid-900.ttf"></a>
+    <a href="~/webfonts/fa-solid-900.woff"></a>
+    <a href="~/webfonts/fa-solid-900.woff2"></a>*@
+</body>
+</html>
