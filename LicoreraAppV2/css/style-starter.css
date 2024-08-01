@@ -18913,6 +18913,21 @@ a.btn.btn-style.btn-banner:hover {
     background: var(--primary-color);
 }
 
+img .img-map {
+    /*border-radius: 50%;*/
+    width: 100%;
+    height: auto;
+}
+
+.figure-map {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: transparent;
+}
+
 @media (max-width: 1280px) {
     .w3l-main-slider h3.title-hero-19 {
         font-size: 76px;
@@ -19353,6 +19368,10 @@ p.vhny-para {
     margin-top: 300px;
 }
 
+.img-licor {
+    height: 175px;
+}
+
 .w3l-features .grids-1.box-wrap:hover .icon {
     background-color: var(--primary-color);
     transition: .3s ease;
@@ -19386,10 +19405,10 @@ p.vhny-para {
 .img-beer {
     height: 105px
 }
-
+/*
 td {
     color: #0ead69;
-}
+}*/
 
 .w3l-features .box-wrap h4 {
     font-size: 24px;

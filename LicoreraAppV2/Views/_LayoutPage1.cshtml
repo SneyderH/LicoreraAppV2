@@ -46,8 +46,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-lg-auto my-2 my-lg-0 navbar-nav-scroll">
-                        <li>@Html.ActionLink("Principal ", "Index", "Home", new { @class = "nav-link" })</li>
-                        <li>@Html.ActionLink("Acerca de ", "About", "Home", new { @class = "nav-link" })</li>
+                        @*<li>@Html.ActionLink("Principal ", "Index", "Home", new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Ubicación ", "Index", "Home", new { @class = "nav-link" })</li>*@
                         @*<li>@Html.ActionLink("Contacto ", "Contact", "Home", new { @class = "nav-link" })</li>
                         <li>@Html.ActionLink("Servicios ", "Service", "Home", new { @class = "nav-link" })</li>*@
 
@@ -55,18 +55,18 @@
 
                         @*BOTON DE BUSQUEDA*@
                         <!--<li class="nav-item search-right">
-                        <a href="#search" class="btn search-btn" title="search"><span class="fas fa-search me-2" aria-hidden="true"></span></a>-->
+    <a href="#search" class="btn search-btn" title="search"><span class="fas fa-search me-2" aria-hidden="true"></span></a>-->
                         <!-- search popup -->
                         <!--<div id="search" class="pop-overlay">
-                            <div class="popup">
-                                <h3 class="title-w3l two mb-4 text-left">Search Here</h3>
-                                <form action="#" method="GET" class="search-box d-flex position-relative">
-                                    <input type="search" placeholder="Enter Keyword here" name="search" required="required" autofocus="">
-                                    <button type="submit" class="btn"><span class="fas fa-search" aria-hidden="true"></span></button>
-                                </form>
-                            </div>
-                            <a class="close" href="#close">×</a>
-                        </div>-->
+        <div class="popup">
+            <h3 class="title-w3l two mb-4 text-left">Search Here</h3>
+            <form action="#" method="GET" class="search-box d-flex position-relative">
+                <input type="search" placeholder="Enter Keyword here" name="search" required="required" autofocus="">
+                <button type="submit" class="btn"><span class="fas fa-search" aria-hidden="true"></span></button>
+            </form>
+        </div>
+        <a class="close" href="#close">×</a>
+    </div>-->
                         <!-- /search popup -->
                         <!--</li>-->
 
@@ -74,8 +74,8 @@
                     </ul>
                     <!--/search-right-->
                     <ul class="header-search me-lg-4">
-                        <li class="get-btn">
-                            <a href="#work" class="btn btn-style btn-primary" title="search">Mirar Precios <i class="fas fa-arrow-right ms-lg-4 ms-2"></i></a>
+                        <li class="get-btn" style="padding: 10px;">
+                            <a href="#address" class="btn btn-style btn-primary" title="search">Nuestra Ubicación <i class="fas fa-arrow-right ms-lg-4 ms-2"></i></a>
                         </li>
 
                     </ul>
@@ -123,7 +123,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5 pe-lg-5">
+                    @*<div class="col-lg-3 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5 pe-lg-5">
                         <h6 class="footer-title-29">Contáctanos</h6>
                         <div class="footer-listw3-grids">
                             <ul class="footer-listw3">
@@ -133,26 +133,26 @@
                             </ul>
 
                         </div>
-                    </div>
+                    </div>*@
                     <div class="col-lg-2 col-md-6 footer-list-29 footer-3 mt-lg-0 mt-5 pe-lg-5">
                         <h6 class="footer-title-29">Links</h6>
                         <div class="footer-listw3-grids">
                             <ul class="footer-listw3">
-                                <li><a href="index.html">Principal</a></li>
-                                <li><a href="about.html">Acerca de</a></li>
-                                <li><a href="#">Blogs</a></li>
-                                <li><a href="contact.html">Contacto</a></li>
+                                <li><a href="#home">Principal</a></li>
+                                <li><a href="#address">Ubicación</a></li>
+                                @*<li><a href="#">Blogs</a></li>
+                                <li><a href="contact.html">Contacto</a></li>*@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 footer-list-29 footer-4 mt-lg-0 mt-5 ps-lg-5">
+                    <!--<div class="col-lg-4 col-md-6 footer-list-29 footer-4 mt-lg-0 mt-5 ps-lg-5">
                         <h6 class="footer-title-29">Permanece Conectado</h6>
                         <p>Recibe actualizaciones de nuestros precios</p>
 
                         <form action="#" class="subscribe" method="post">
                             <input type="email" name="email" placeholder="Tu Correo Electrónico" required="">
                             <button><span class="fas fa-paper-plane"></span></button>
-                        </form>
+                        </form>-->
                         @*<div class="main-social-footer-29 mt-4">
                                 <a href="#facebook" class="facebook"><span class="fab fa-facebook-f"></span></a>
                                 <a href="#twitter" class="twitter"><span class="fab fa-twitter"></span></a>
@@ -160,7 +160,7 @@
 
                                 <a href="#linkd" class="linkd"><span class="fab fa-linkedin-in"></span></a>
                             </div>*@
-                    </div>
+                    <!--</div>-->
                 </div>
                 <div class="bottom-copies text-center">
                     <p class="copy-footer-29">© 2024. Todos los derechos reservados | Diseñado por <a href="#">SneyDevs</a></p>
