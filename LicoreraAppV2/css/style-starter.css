@@ -611,6 +611,11 @@ progress {
     height: auto
 }
 
+.img-fluid2 {
+    max-width: 50%;
+    height: auto
+}
+
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
@@ -18380,8 +18385,11 @@ span.w3yellow {
 }
 
 .navbar .navbar-brand img {
-    max-width: 140px;
+    max-width: 50px;
     transition: all 0.5s ease;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0A844F;
 }
 
 .navbar-nav .nav-item {
@@ -18644,8 +18652,38 @@ a.dropdown-item.active {
 
 }
 
-@media (max-width: 415px) {}
+@media only screen and (max-width: 548px) {
 
+    span.w3yellow {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .span.w3yellow {
+        font-size: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    span.w3yellow {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+
+    span.w3yellow {
+        font-size: 15px;
+    }
+
+    .navbar .navbar-brand img {
+        max-width: 40px;
+    }
+}
 /*--//serach--*/
 
 .nav-fixed .navbar-nav .nav-link {
