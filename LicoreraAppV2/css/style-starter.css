@@ -7599,9 +7599,9 @@ fieldset:disabled .btn {
     align-items: flex-end !important
 }
 
-.align-items-center {
+/*.align-items-center {
     align-items: center !important
-}
+}*/
 
 .align-items-baseline {
     align-items: baseline !important
@@ -20686,5 +20686,59 @@ div#owl-demo2 .owl-dots,
     /* Firefox 18- */
     color: #fff5ee;
     opacity: .5;
+}
+
+/*.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+
+.panel {
+    padding: 0 18px;
+    display: none;*/ /* Oculto por defecto */
+    /*overflow: hidden;
+}*/
+
+.accordion {
+    background-color: #0EA565;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    margin-top: 10px; /* Espacio entre el contenido y el botón */
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+
+.active, .accordion:hover {
+    background-color: #0A844F;
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0; /* Altura inicial cero */
+    overflow: hidden;
+    opacity: 0; /* Inicialmente invisible */
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Transición de opacidad y altura */
+}
+
+.panel.show {
+    opacity: 1; /* Totalmente visible */
 }
 
