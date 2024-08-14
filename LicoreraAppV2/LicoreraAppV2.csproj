@@ -142,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="index.html" />
     <None Include="packages.config" />
     <Content Include="Views\_LayoutPage1.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
